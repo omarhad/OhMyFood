@@ -1,0 +1,19 @@
+{
+  "name": "oussamahadrami_3_06022022",
+  "version": "1.0.0",
+  "description": "ohmyfood site web",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:.public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omarhad/OussamaHadrami_3_06022022.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/omarhad/OussamaHadrami_3_06022022/issues"
+  },
+  "homepage": "https://github.com/omarhad/OussamaHadrami_3_06022022#readme"
+}
