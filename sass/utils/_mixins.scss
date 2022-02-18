@@ -3,3 +3,6 @@
     align-items: center;
     justify-content: center;
 }
+@mixin shadow-primary {
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
+}
