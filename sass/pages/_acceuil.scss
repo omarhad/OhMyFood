@@ -25,23 +25,31 @@
         color: white;
         border-radius: 3rem;
         border-style: none;
-        &:hover{
-            cursor: pointer;
-        }
+        cursor: pointer;
     }
 }
 .container{
     @include component-center;
     flex-direction: column;
     width: 100%;
-    h1{
-        width: 90%;
-        text-align: left;
-        font-size: 1.5rem;
-        left: 0;
-    }
     &__fonctionnement{
+        padding:1rem 0;
+        h1{
+            @include titres;
+        }
         @include component-center;
+        width: 100%;
+        flex-direction: column;
+    }
+    &__restaurants{
+        padding-top: 1rem;
+        padding-bottom: 3rem;
+        h1{
+            @include titres;
+        }
+        background-color: rgb(240, 240, 240);
+        @include component-center;
+        gap: 1rem;
         width: 100%;
         flex-direction: column;
     }

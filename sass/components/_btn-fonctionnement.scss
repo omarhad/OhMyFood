@@ -1,6 +1,5 @@
 .btn{
     @include component-center;
-    display: flex;
     background-color: rgb(240, 240, 240);
     flex-direction: row;
     width: 20rem;
@@ -8,6 +7,7 @@
     margin: 1rem;
     border-radius: 1rem;
     @include shadow-primary;
+    cursor: pointer;
     &__numero{
         @include component-center;
         position: absolute;
@@ -17,5 +17,14 @@
         height: 1.5rem;
         border-radius: 50%;
         transform: translateX(-10rem);
+    }
+    &__icone{
+        position: absolute;
+        height: 1rem;
+        transform: translateX(-7rem);
+        fill: gray;
+    }
+    &:hover{
+        background-color: #9256dc3a;
     }
 }

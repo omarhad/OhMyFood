@@ -9,6 +9,7 @@
         height: 5rem;
         font-size: 2.5rem;
         box-shadow: 0 .2rem .5rem rgba(0, 0, 0, 0.219);
+        color: black;
     }
     &__ville{
         @include component-center;
@@ -17,7 +18,7 @@
         height: 3.5rem;
         width: 100%;
         &__map{
-            margin: 0 1rem;
+            transform: translateX(-1rem);
         }
     }
 }
