@@ -1,0 +1,33 @@
+.btn{
+    @include component-center;
+    background-color: rgb(240, 240, 240);
+    flex-direction: row;
+    width: 20rem;
+    height: 4rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    @include shadow-primary;
+    cursor: pointer;
+    &__numero{
+        @include component-center;
+        position: absolute;
+        color: white;
+        background-color: $color-primary;
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        transform: translateX(-10rem);
+    }
+    &__icone{
+        position: absolute;
+        height: 1rem;
+        transform: translateX(-7rem);
+        fill: gray;
+    }
+}
+.btn:hover{
+    background-color: #d8c7ee;
+    .btn__icone{
+        fill: #b98ef1;
+    }
+}
