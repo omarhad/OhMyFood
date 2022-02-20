@@ -32,8 +32,41 @@
             }
         }
         &__icone{
-            height: 1.5rem;
-            margin-right: 1.5rem;
+            fill: transparent;
+            stroke:black;
+            stroke-width: 50;
+            position: relative;
+            width: 1.5rem;
+            margin-right: 2rem;
+            svg{
+                overflow: visible;
+            }
+            svg:hover path{
+                animation: heart-annimation .3s ease-out forwards;
+            }
+            path{
+                stroke-dashoffset: 0;
+                stroke-dasharray: 3000;
+                transform-origin: center;
+            }
         }
+    }
+}
+
+@keyframes heart-annimation {
+    0%{
+        fill: transparent;
+        stroke: black;
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+        transform: scale(1.1);
+    }
+    100%{
+        fill:url(#grad);
+        stroke:url(#grad);
+        opacity: 1;
+        transform: scale(1);
     }
 }
