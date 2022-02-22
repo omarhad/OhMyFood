@@ -1,6 +1,6 @@
-.btn{
+.btn-fonction{
     @include component-center;
-    background-color: rgb(240, 240, 240);
+    background-color: $light-grey;
     flex-direction: row;
     width: 20rem;
     height: 4rem;
@@ -8,6 +8,7 @@
     border-radius: 1rem;
     @include shadow-primary;
     cursor: pointer;
+    transition: all .3s;
     &__numero{
         @include component-center;
         position: absolute;
@@ -24,10 +25,10 @@
         transform: translateX(-7rem);
         fill: gray;
     }
-}
-.btn:hover{
-    background-color: #d8c7ee;
-    .btn__icone{
-        fill: #b98ef1;
+    &:hover{
+        background-color: #d8c7ee;
+        .btn__icone{
+            fill: #b98ef1;
+        }
     }
 }
