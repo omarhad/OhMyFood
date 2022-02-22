@@ -1,0 +1,50 @@
+.containerMenu{
+    @include component-center;
+    flex-direction: column;
+    background-color: $light-grey;
+    border-radius: 2.5rem 2.5rem 0 0;
+    &__titre{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 95%;
+        margin-top: 1rem;
+        h1{
+            font-size: 1.7rem;
+        }
+    }
+    &__icone{
+        fill: transparent;
+        stroke:black;
+        stroke-width: 50;
+        position: relative;
+        width: 1.5rem;
+        transform: translateX(-1rem);
+        svg{
+            overflow: visible;
+            &:hover path{
+                animation: heart-annimation .3s ease-out forwards;
+            }
+        }
+        path{
+            stroke-dashoffset: 0;
+            stroke-dasharray: 3000;
+            transform-origin: center;
+        }
+    }
+    &__section{
+        margin-bottom: 2rem;
+        h2{
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+        &__line{
+            width: 2.5rem;
+            height: .2rem;
+            background-color: $color-Tertiary;
+            margin-bottom: 1rem;
+        }
+    }
+}
+@include heart-annim; 

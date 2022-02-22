@@ -7,9 +7,17 @@
         z-index: 10;
         width: 100%;
         height: 5rem;
-        font-size: 2.5rem;
         box-shadow: 0 .2rem .5rem rgba(0, 0, 0, 0.219);
-        color: black;
+        background-color:white;
+        &__fleche {
+            position: absolute;
+            width: 1rem;
+            overflow: visible;
+            left: 1rem;
+        }
+        img{
+            width: 10rem;
+        }
     }
     &__ville{
         @include component-center;
@@ -19,6 +27,16 @@
         width: 100%;
         &__map{
             transform: translateX(-1rem);
+        }
+    }
+    &__banniere{
+        z-index: -99;
+        height: 15rem;
+        width: 100%;
+        img{
+            width: 100%;
+            object-fit: cover;
+            overflow: hidden;
         }
     }
 }
