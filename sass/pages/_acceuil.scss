@@ -2,7 +2,7 @@
     @include component-center;
     flex-direction: column;
     width: 100%;
-    background-color: rgb(240, 240, 240);
+    background-color: $light-grey;
     &__titre{
         font-size: 1.8rem;
         font-weight: 500;
@@ -14,18 +14,6 @@
         font-weight: 300;
         text-align: center;
         width: 80%;
-    }
-    &__btn {
-        @include component-center;
-        margin: 2rem 0 3rem 0;
-        height: 3rem;
-        width: 13rem;
-        background: linear-gradient(to bottom right, $color-secondary , $color-primary);
-        @include shadow-primary;
-        color: white;
-        border-radius: 3rem;
-        border-style: none;
-        cursor: pointer;
     }
 }
 .container{
@@ -47,7 +35,7 @@
         h1{
             @include titres;
         }
-        background-color: rgb(240, 240, 240);
+        background-color: $light-grey;
         @include component-center;
         gap: 1rem;
         width: 100%;

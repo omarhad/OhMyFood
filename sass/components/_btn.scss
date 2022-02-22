@@ -1,0 +1,12 @@
+.btn {
+    @include component-center;
+    margin: 2rem 0 3rem 0;
+    height: 3rem;
+    width: 13rem;
+    background: linear-gradient(to bottom right, $color-secondary , $color-primary);
+    @include shadow-primary;
+    color: white;
+    border-radius: 3rem;
+    border-style: none;
+    cursor: pointer;
+}
