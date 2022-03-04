@@ -42,3 +42,11 @@
         flex-direction: column;
     }
 }
+@media all and (min-width: 705px) {
+    .container__fonctionnement , .container__restaurants{ 
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 2rem 0;
+    }
+    
+}
