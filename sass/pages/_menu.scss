@@ -48,3 +48,17 @@
     }
 }
 @include heart-annim; 
+@media all and (min-width: 705px) {
+    .containerMenu{ 
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 1rem;
+        padding: 2rem 0;
+        .btn-commander{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

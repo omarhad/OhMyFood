@@ -1,6 +1,6 @@
 .menu{
     width: 95%;
-    max-width: 30rem;
+    max-width: 28rem;
     min-width: 15rem;
     &__contents{
         @include component-center;
@@ -15,9 +15,11 @@
             background-color: white;
             border-radius: .8rem;
             animation: apparition-annimation .8s ease-in forwards;
-            animation-delay: .5s;
+            animation-delay: 1.5s;
+            transition: all .3s ease;
             &:hover{
-                
+                @include shadow-hover;
+                transition: all .3s ease;
                 .elmts__aside{
                     span{
                         width: 4rem;
