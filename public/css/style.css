@@ -65,10 +65,11 @@ body {
   fill: gray;
 }
 .btn-fonction:hover {
-  background-color: #e7d5ff;
+  background-color: #f0e4ff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
 }
 .btn-fonction:hover .btn-fonction__icone {
-  fill: #caa2ff;
+  fill: #d9bdfd;
 }
 
 .card-resto {
@@ -76,6 +77,14 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   border-radius: 1rem;
   height: 14rem;
+  transition: all 0.3s ease;
+}
+.card-resto__new {
+  position: absolute;
+  background-color: #99E2D0;
+  transform: translate(14rem, 1rem);
+  padding: 0.3rem 0.5rem;
+  color: green;
 }
 .card-resto__image {
   width: 100%;
@@ -125,6 +134,10 @@ body {
   stroke-dasharray: 3000;
   transform-origin: center;
 }
+.card-resto:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
 
 @keyframes heart-annimation {
   0% {
@@ -162,11 +175,12 @@ body {
 .btn:hover {
   transform: scale(1.1);
   transition: all 0.3s ease;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
 }
 
 .menu {
   width: 95%;
-  max-width: 30rem;
+  max-width: 28rem;
   min-width: 15rem;
 }
 .menu__contents {
@@ -185,7 +199,12 @@ body {
   background-color: white;
   border-radius: 0.8rem;
   animation: apparition-annimation 0.8s ease-in forwards;
-  animation-delay: 0.5s;
+  animation-delay: 1.5s;
+  transition: all 0.3s ease;
+}
+.menu__contents .elmts:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
 }
 .menu__contents .elmts:hover .elmts__aside span {
   width: 4rem;
@@ -316,6 +335,9 @@ body {
   .header__banniere {
     height: 25rem;
   }
+  .header__banniere img {
+    transform: translateY(-50%);
+  }
 }
 .footer {
   padding: 1rem 2rem;
@@ -340,6 +362,21 @@ body {
   color: white;
 }
 
+@media all and (min-width: 705px) {
+  .footer {
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    height: 15rem;
+    align-items: center;
+  }
+  .footer ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    align-items: center;
+  }
+}
 .presentation {
   display: flex;
   align-items: center;
@@ -404,7 +441,7 @@ body {
   .container__fonctionnement, .container__restaurants {
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 2rem 0;
+    padding: 4rem 0;
   }
 }
 .containerMenu {
@@ -474,6 +511,88 @@ body {
     stroke: url(#grad);
     opacity: 1;
     transform: scale(1);
+  }
+}
+@media all and (min-width: 705px) {
+  .containerMenu {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 2rem 0;
+  }
+  .containerMenu .btn-commander {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+.lds-ring {
+  z-index: -999;
+  display: flex;
+  opacity: 0;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  animation: spinner 2s ease;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  margin: 8px;
+  border: 8px solid black;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: black transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+
+header, .presentation, .container, .containerMenu, footer {
+  animation: transp 2s ease;
+}
+
+@keyframes transp {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinner {
+  0% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 

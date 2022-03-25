@@ -14,5 +14,6 @@
     &:hover{
         transform: scale(1.1);
         transition: all .3s ease;
+        @include shadow-hover;
     }
 }

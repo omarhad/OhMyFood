@@ -20,3 +20,18 @@
         }
     }
 }
+@media all and (min-width: 705px) {
+    .footer{
+        display: flex;
+        gap: 5rem;
+        justify-content: center;
+        height: 15rem;
+        align-items: center;
+        ul{
+            display: flex;
+            justify-content: space-around;
+            gap: 2rem;
+            align-items: center;
+        }
+    }
+}

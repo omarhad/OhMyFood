@@ -26,9 +26,10 @@
         fill: gray;
     }
     &:hover{
-        background-color: #e7d5ff;
+        background-color: #f0e4ff;
+        @include shadow-hover;
         .btn-fonction__icone{
-            fill: #caa2ff;
+            fill: #d9bdfd;
         }
     }
 }

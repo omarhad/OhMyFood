@@ -43,5 +43,8 @@
 @media all and (min-width: 705px) {
     .header__banniere{
         height: 25rem;
+        img{
+            transform: translateY(-50%);
+        }
     }
 }
