@@ -15,34 +15,5 @@
     font-size: 1.5rem;
     left: 0;
 }
-@mixin heart-annim {
-    @keyframes heart-annimation {
-        0%{
-            fill: transparent;
-            stroke: black;
-            opacity: 1;
-        }
-        50%{
-            opacity: 0;
-            transform: scale(1.15);
-        }
-        100%{
-            fill:url(#grad);
-            stroke:url(#grad);
-            opacity: 1;
-            transform: scale(1);
-        }
-    }
-}
-@mixin apparition-annimation{
-    @keyframes apparition-annimation {
-        0%{
-            opacity: 0;
-            transform: translateY(.5rem);
-        }
-        100%{
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-}
+
+
