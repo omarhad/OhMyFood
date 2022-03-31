@@ -38,10 +38,10 @@
 }
 @keyframes transp {
   0% {
-    opacity: 0;
+    opacity: 0.2;
   }
   75% {
-    opacity: 0;
+    opacity: 0.2;
   }
   100% {
     opacity: 1;
@@ -253,7 +253,6 @@ body {
   background-color: white;
   border-radius: 0.8rem;
   animation: apparition-annimation 0.8s ease-in forwards;
-  animation-delay: 0.5s;
   transition: all 0.3s ease;
   overflow: hidden;
 }
@@ -270,6 +269,15 @@ body {
   opacity: 1;
   transform: rotate(360deg);
   transition: transform 0.5s;
+}
+.menu__contents .emergence:nth-child(1) .elmts {
+  animation-delay: 0.5s;
+}
+.menu__contents .emergence:nth-child(2) .elmts {
+  animation-delay: 0.8s;
+}
+.menu__contents .emergence:nth-child(3) .elmts {
+  animation-delay: 1.1s;
 }
 
 @media all and (max-width: 445px) {
@@ -309,7 +317,7 @@ body {
   bottom: 0;
   font-weight: 500;
   padding-right: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.7rem;
   width: 2rem;
 }
 .elmts__aside span {
